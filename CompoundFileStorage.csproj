@@ -32,14 +32,40 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryTree\BinarySearchTree.cs" />
+    <Compile Include="BinaryTree\BinaryTreeNode.cs" />
+    <Compile Include="BinaryTree\Exceptions\BSTDuplicatedException.cs" />
+    <Compile Include="BinaryTree\Node.cs" />
+    <Compile Include="BinaryTree\NodeList.cs" />
+    <Compile Include="BinaryTree\TraversalMethods.cs" />
+    <Compile Include="CFItem.cs" />
+    <Compile Include="CFItemComparer.cs" />
+    <Compile Include="CFMock.cs" />
+    <Compile Include="CFStorage.cs" />
+    <Compile Include="CFStream.cs" />
+    <Compile Include="CompoundFile.cs" />
+    <Compile Include="DirectoryEntry.cs" />
+    <Compile Include="Exceptions\CFCorruptedFileException.cs" />
+    <Compile Include="Exceptions\CFDisposedException.cs" />
+    <Compile Include="Exceptions\CFDuplicatedItemException.cs" />
+    <Compile Include="Exceptions\CFException.cs" />
+    <Compile Include="Exceptions\CFFileFormatException.cs" />
+    <Compile Include="Exceptions\CFFormatException.cs" />
+    <Compile Include="Exceptions\CFInvalidOperation.cs" />
+    <Compile Include="Exceptions\CFItemNotFound.cs" />
+    <Compile Include="Header.cs" />
+    <Compile Include="Interfaces\ICFItem.cs" />
+    <Compile Include="Interfaces\ICFStorage.cs" />
+    <Compile Include="Interfaces\ICFStream.cs" />
+    <Compile Include="Interfaces\ICompoundFile.cs" />
+    <Compile Include="Interfaces\IDirectoryEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sector.cs" />
+    <Compile Include="SectorCollection.cs" />
+    <Compile Include="StreamRW.cs" />
+    <Compile Include="StreamView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
